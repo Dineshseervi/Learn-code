@@ -1,4 +1,4 @@
-package main.java;
+package main.java.sorting;
 
 public class LinkListSorting {
 
