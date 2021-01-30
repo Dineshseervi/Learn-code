@@ -10,6 +10,7 @@ Data structure topic to cover:-
 
 ------
 (https://www.geeksforgeeks.org/binary-tree-data-structure/)
+(https://www.geeksforgeeks.org/tag/binary-tree/ )
 
 Introduction :
 
