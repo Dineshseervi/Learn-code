@@ -5,19 +5,35 @@ import java.util.concurrent.*;
 
 public class ExampleBlockingQueue {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
         BlockingQueue<Integer> blockingQueue=new ArrayBlockingQueue<>(5);
-        ExecutorService executorService= Executors.newCachedThreadPool();
-        executorService.execute(new Producer(blockingQueue));
-        executorService.execute(new Consumer(blockingQueue));
-        executorService.shutdown();
+        Producer producer = new Producer(blockingQueue);
+        producer.start();
+        new Consumer(blockingQueue).start();
+        System.out.println("status: "+producer.status());
+        Thread.sleep(29000);
+        System.out.println("status: "+producer.status());
+
+
     }
 }
 
 class Producer implements Runnable
 {
+    Thread thread;
 
+
+    public void start()
+    {
+        thread=new Thread(this);
+        thread.start();
+    }
+
+    public boolean status()
+    {
+        return thread.isAlive();
+    }
     Random random=new Random();
     private BlockingQueue<Integer> blockingQueue;
 
@@ -27,12 +43,14 @@ class Producer implements Runnable
 
     @Override
     public void run() {
-        while (true)
+        int count =0;
+        while (count<11)
         {
             try {
-                blockingQueue.put(random.nextInt());
+                count++;
+                blockingQueue.put(random.nextInt(400));
                 System.out.println("added value");
-                Thread.sleep(4000);
+                Thread.sleep(random.nextInt(500));
             } catch (InterruptedException interruptedException) {
                 interruptedException.printStackTrace();
             }
@@ -44,16 +62,25 @@ class Producer implements Runnable
 class Consumer implements Runnable
 {
 
+    Thread thread;
     private BlockingQueue<Integer> blockingQueue;
 
     public Consumer(BlockingQueue<Integer> blockingQueue) {
         this.blockingQueue = blockingQueue;
     }
 
+    public void start()
+    {
+        thread=new Thread(this);
+        thread.start();
+    }
+
     @Override
     public void run() {
         try {
-            while (true) {
+            int count =0;
+            while (count<11) {
+                count++;
                 Integer value = blockingQueue.take();
                 System.out.println(" consume value: " + value);
             }

@@ -105,7 +105,7 @@ public class RecursionLevelOrderTraversal {
         Queue<TreeNode> nodeQueue=new LinkedBlockingQueue<>();
         nodeQueue.add(node);
         Queue<TreeNode> nodeQueueSecond=new LinkedBlockingQueue<>();
-        List<Integer> rightView=new ArrayList<>();
+        //List<Integer> rightView=new ArrayList<>();
 
         while (!nodeQueue.isEmpty())
         {
@@ -125,8 +125,18 @@ public class RecursionLevelOrderTraversal {
             //rightView.add(inNode.data);
             while (nodeQueueSecond.peek()!=null)
             {
-                nodeQueue.add(nodeQueueSecond.poll());
+                TreeNode nodeOfLoop=nodeQueueSecond.poll();
+                System.out.print(" "+nodeOfLoop.data);
+                //nodeQueue.add(nodeQueueSecond.poll());
+                if(nodeOfLoop.left!=null) {
+                    nodeQueue.add(nodeOfLoop.left);
+                }
+                if(nodeOfLoop.right!=null)
+                {
+                    nodeQueue.add(nodeOfLoop.right);
+                }
             }
+            System.out.println("");
         }
         //System.out.println("right view:"+ rightView.toString());
     }
@@ -148,6 +158,8 @@ public class RecursionLevelOrderTraversal {
         tree.treeNode.left.left= new TreeNode(10);
         tree.treeNode.left.right= new TreeNode(30);
 
+
+        tree.printLevelWithQueue(tree.treeNode);
         /*System.out.println("Level order traversal of binary tree is ");
         tree.printLevelOrder(tree.treeNode);
         int diameter= tree.diameterOfTree(tree.treeNode);
@@ -160,7 +172,7 @@ public class RecursionLevelOrderTraversal {
         BoundaryTraversalTree  boundaryTraversalTree=new BoundaryTraversalTree();
         boundaryTraversalTree.boundaryTraversalOfTreeNode(tree.treeNode);*/
 
-        VerticalTreePrint verticalTreePrint=new VerticalTreePrint();
-        verticalTreePrint.pintTreeMinMax(tree.treeNode);
+       // VerticalTreePrint verticalTreePrint=new VerticalTreePrint();
+       // verticalTreePrint.pintTreeMinMax(tree.treeNode);
     }
 }
