@@ -7,6 +7,9 @@ public class CakeCutArea {
         int [] ver={1,3};
         int area=maxArea(5,4,hor,ver);
         System.out.println("area : "+area);
+
+        /*byte[] bytes=new byte[23];
+        bytes.toString();*/
     }
 
     public static int maxArea(int h, int w, int[] horizontalCuts, int[] verticalCuts) {
