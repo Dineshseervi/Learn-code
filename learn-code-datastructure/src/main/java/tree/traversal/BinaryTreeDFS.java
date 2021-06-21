@@ -1,4 +1,8 @@
-package main.java.tree;
+package main.java.tree.traversal;
+
+import main.java.tree.TreeNode;
+
+import java.util.List;
 
 /**
  *       1
@@ -63,6 +67,17 @@ public class BinaryTreeDFS {
         inOrderTraverse(node.left);
         printNodeData(node.data);
         inOrderTraverse(node.right);
+
+    }
+
+    public void inOrderTraverse(TreeNode node, List<Integer> list) {
+        if (node == null) {
+            return;
+        }
+        inOrderTraverse(node.left,list);
+        printNodeData(node.data);
+        list.add(node.data);
+        inOrderTraverse(node.right,list);
 
     }
 

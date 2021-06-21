@@ -13,6 +13,7 @@ public class ProducerConsumerLearn {
     private void producer() throws InterruptedException {
         synchronized (lock) {
             while (true) {
+
                 if (list.size() == UPPER_LIMIT) {
                     System.out.println("max limit is reached");
                     lock.wait();
@@ -22,6 +23,7 @@ public class ProducerConsumerLearn {
                     System.out.println("adding value:" + value);
                     list.add(value);
                     value++;
+                    Thread.sleep(500);
                     lock.notify();
                 }
             }
@@ -31,6 +33,7 @@ public class ProducerConsumerLearn {
     private void consumer() throws InterruptedException {
         synchronized (lock) {
             while (true) {
+
                 if (list.size() == LOWER_LIMIT) {
                     System.out.println("lower limit is reached");
                     lock.wait();
@@ -38,9 +41,15 @@ public class ProducerConsumerLearn {
 
                 } else {
                     System.out.println("remvoed the value:" + list.remove(list.size() - 1));
+                    Thread.sleep(500);
                     lock.notify();
+                   // System.out.println("notify");
                 }
+                System.out.println("outside");
+                Thread.sleep(500);
             }
+
+
         }
     }
 

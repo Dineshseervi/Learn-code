@@ -13,13 +13,13 @@ public class CallableExample implements Callable<Integer> {
     }
 
     @Override
-    public Integer call() throws Exception {
+    public Integer call() throws InterruptedException {
         Thread.sleep(9000);
         return id;
     }
 
     public static void main(String[] args) throws ExecutionException, InterruptedException {
-        /*ExecutorService executorService= Executors.newFixedThreadPool(2);
+        ExecutorService executorService= Executors.newFixedThreadPool(2);
         List<Future<Integer>> futures=new ArrayList<>();
         for(int i=0;i<=10;i++) {
             Future<Integer> future=  executorService.submit(new CallableExample(i));
@@ -29,17 +29,10 @@ public class CallableExample implements Callable<Integer> {
 
         for (Future<Integer> future:futures)
         {
-            System.out.println(future.get());
+            System.out.println(future.get() + "     "+future.isDone());
         }
         System.out.println("second loop is over----------------");
-        executorService.shutdown();*/
-        System.out.println("start");
-        boolean val=true;
-        while (val)
-        {
-
-        }
-        System.out.println("complete");
+        executorService.shutdown();
     }
 
 

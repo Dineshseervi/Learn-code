@@ -2,10 +2,7 @@ package main.java.tree.breadthFirstSearch;
 
 import main.java.tree.TreeNode;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Queue;
+import java.util.*;
 import java.util.concurrent.LinkedBlockingQueue;
 
 
@@ -102,9 +99,9 @@ public class RecursionLevelOrderTraversal {
 
     public void printLevelWithQueue(TreeNode node)
     {
-        Queue<TreeNode> nodeQueue=new LinkedBlockingQueue<>();
+        Queue<TreeNode> nodeQueue=new ArrayDeque<>();
         nodeQueue.add(node);
-        Queue<TreeNode> nodeQueueSecond=new LinkedBlockingQueue<>();
+        Queue<TreeNode> nodeQueueSecond=new ArrayDeque<>();
         //List<Integer> rightView=new ArrayList<>();
 
         while (!nodeQueue.isEmpty())
@@ -160,7 +157,7 @@ public class RecursionLevelOrderTraversal {
 
 
         tree.printLevelWithQueue(tree.treeNode);
-        /*System.out.println("Level order traversal of binary tree is ");
+        System.out.println("Level order traversal of binary tree is ");
         tree.printLevelOrder(tree.treeNode);
         int diameter= tree.diameterOfTree(tree.treeNode);
         System.out.println("");
@@ -170,9 +167,54 @@ public class RecursionLevelOrderTraversal {
         tree.printLevelWithQueue(tree.treeNode);
         System.out.println("------------");
         BoundaryTraversalTree  boundaryTraversalTree=new BoundaryTraversalTree();
-        boundaryTraversalTree.boundaryTraversalOfTreeNode(tree.treeNode);*/
+        boundaryTraversalTree.boundaryTraversalOfTreeNode(tree.treeNode);
 
        // VerticalTreePrint verticalTreePrint=new VerticalTreePrint();
        // verticalTreePrint.pintTreeMinMax(tree.treeNode);
+
+    }
+
+
+    public void printQueue(TreeNode node)
+    {
+        Queue<TreeNode> nodeQueue=new LinkedBlockingQueue<>();
+        nodeQueue.add(node);
+        Queue<TreeNode> nodeQueueSecond=new LinkedBlockingQueue<>();
+
+
+        while (!nodeQueue.isEmpty())
+        {
+            TreeNode inNode=null;
+            while (nodeQueue.peek()!=null)
+            { inNode= nodeQueue.poll();
+
+                System.out.println(inNode.data);
+                if(inNode.left!=null) {
+                    nodeQueueSecond.add(inNode.left);
+                }
+                if(inNode.right!=null)
+                {
+                    nodeQueueSecond.add(inNode.right);
+                }
+            }
+            List<Integer> collection=new ArrayList<>();
+            while (nodeQueueSecond.peek()!=null)
+            {
+                inNode=nodeQueueSecond.poll();
+                collection.add(inNode.data);
+                if(inNode.left!=null) {
+                    nodeQueue.add(inNode.left);
+                }
+                if(inNode.right!=null)
+                {
+                    nodeQueue.add(inNode.right);
+                }
+            }
+            for (int i=collection.size()-1;i>=0;i--)
+            {
+                System.out.println(collection.get(i));
+            }
+        }
+
     }
 }

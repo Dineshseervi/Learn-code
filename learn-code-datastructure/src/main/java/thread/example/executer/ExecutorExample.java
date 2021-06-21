@@ -9,7 +9,7 @@ public class ExecutorExample {
     public static void main(String[] args) {
         ExecutorService executorService= Executors.newFixedThreadPool(5);
 
-        for (int i=0;i<=50;i++)
+        for (int i=0;i<=20;i++)
         {
             executorService.execute(new WorkerExample(i));
 

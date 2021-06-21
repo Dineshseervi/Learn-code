@@ -49,6 +49,8 @@ class Producer implements Runnable
             try {
                 count++;
                 blockingQueue.put(random.nextInt(400));
+
+                System.out.println("size: "+blockingQueue.size());
                 System.out.println("added value");
                 Thread.sleep(random.nextInt(500));
             } catch (InterruptedException interruptedException) {

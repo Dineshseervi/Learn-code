@@ -6,7 +6,7 @@ import java.util.concurrent.Semaphore;
 
 public class SemaphoreExample {
 
-    private Semaphore  semaphore=new Semaphore(4,true);
+    private Semaphore  semaphore=new Semaphore(2,true);
 
     private void downloadData() {
 
@@ -25,14 +25,15 @@ public class SemaphoreExample {
     }
 
     private void download() throws InterruptedException {
-        System.out.println("download Data from web and sending ...");
+        System.out.println("download Data from web and sending ..."+Thread.currentThread().getName());
         Thread.sleep(9000);
     }
 
 
     public static void main(String[] args) {
+        //System.out.println("int min : "+Integer.MIN_VALUE);
         SemaphoreExample semaphoreExample=new SemaphoreExample();
-        ExecutorService executorService= Executors.newCachedThreadPool();
+        ExecutorService executorService= Executors.newFixedThreadPool(5);
         for(int i=0;i<12;i++)
         {
             executorService.execute(new Runnable() {
@@ -42,5 +43,6 @@ public class SemaphoreExample {
                 }
             });
         }
+        executorService.shutdown();
     }
 }
