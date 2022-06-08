@@ -33,6 +33,11 @@ public class LinkListSorting {
     }
 
 
+    // 1 2 3 4 5 6 7 8 9 10
+    //default= first
+    //first ->1
+    //second->5
+    //firsthalf.next=null
     public Node mergeSort(Node node) {
 
         if (node == null || node.next == null) {
