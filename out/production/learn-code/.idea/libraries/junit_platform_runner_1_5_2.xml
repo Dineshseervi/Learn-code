@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="junit-platform-runner-1.5.2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../2021_march/junit-platform-runner-1.5.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../2021_march/junit-jupiter-engine-5.5.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,51 @@
+Data structure topic to cover:-
+-Array
+-Link List
+-Stack
+-Queue
+-Binary Tree
+-Binary Search Tree
+-Heap
+
+
+------
+(https://www.geeksforgeeks.org/binary-tree-data-structure/)
+(https://www.geeksforgeeks.org/tag/binary-tree/ )
+
+Introduction :
+
+Binary Tree | Set 1 (Introduction)
+Binary Tree | Set 2 (Properties)
+Binary Tree | Set 3 (Types of Binary Tree)
+Handshaking Lemma and Interesting Tree Properties
+Enumeration of Binary Trees
+Insertion in a Binary Tree
+Deletion in a Binary Tree
+BFS vs DFS for Binary Tree
+Binary Tree (Array implementation)
+AVL with duplicate keys
+Applications of tree data structure
+Applications of Minimum Spanning Tree Problem
+Continuous Tree
+Foldable Binary Trees
+Expression Tree
+Evaluation of Expression Tree
+Symmetric Tree (Mirror Image of itself)
+
+Traversals :
+
+Tree Traversals
+Inorder Tree Traversal without Recursion
+Inorder Tree Traversal without recursion and without stack!
+Print Postorder traversal from given Inorder and Preorder traversals
+Find postorder traversal of BST from preorder traversal
+Find all possible binary trees with given Inorder Traversal
+Replace each node in binary tree with the sum of its inorder predecessor and successor
+Populate Inorder Successor for all nodes
+Inorder Successor of a node in Binary Tree
+Find n-th node of inorder traversal
+Find n-th node in Postorder traversal of a Binary Tree
+Level Order Tree Traversal
+Level order traversal in spiral form
+Level order traversal line by line
+Level order traversal with direction change after every two levels

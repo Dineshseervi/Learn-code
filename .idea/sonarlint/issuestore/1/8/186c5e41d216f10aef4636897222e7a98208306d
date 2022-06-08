@@ -1,0 +1,15 @@
+
+T
+java:S4973	"9Use the "equals" method if value comparison was intended.(ρισαύÿÿÿÿ
+W
+java:S4973†"9Use the "equals" method if value comparison was intended.(μϊφ8½Ψΰ/
+m
+java:S3776I"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(ξσΆÿÿÿÿÿ
+]
+java:S1854‘"ARemove this useless assignment to local variable "stringCompare".(­±¥ψÿÿÿÿ
+W	java:S125“"<This block of commented-out lines of code should be removed.(χτρϊÿÿÿÿ
+T	java:S106"9Replace this use of System.out or System.err by a logger.(‡²λΖωÿÿÿÿ
+W	java:S125—"<This block of commented-out lines of code should be removed.(Ξ’τ…ϊÿÿÿÿ
+O	java:S106™"9Replace this use of System.out or System.err by a logger.(Θ„³υ
+N
+java:S1481‘"2Remove this unused "stringCompare" local variable.(­±¥ψÿÿÿÿ

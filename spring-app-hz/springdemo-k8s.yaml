@@ -1,0 +1,65 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: springdemo
+  labels:
+    app: springdemo
+spec:
+  selector:
+    app: springdemo
+  ports:
+    - port: 8080
+      name: http
+      protocol: TCP
+      targetPort: 8080
+    - name: hazelcast
+      protocol: TCP
+      port: 5701
+      targetPort: 5701
+  type: NodePort
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: springdemo
+  labels:
+    app: springdemo
+spec:
+  selector:
+    matchLabels:
+      app: springdemo
+  replicas: 7
+  template:
+    metadata:
+      annotations:
+        sidecar.istio.io/inject: "true"
+      labels:
+        app: springdemo
+        version: v1
+    spec:
+      containers:
+        - name: springdemo
+          env:
+            - name: POD_NAME
+              valueFrom:
+                fieldRef:
+                  fieldPath: metadata.name
+            - name: KUBERNETES_NAMESPACE
+              valueFrom:
+                fieldRef:
+                  fieldPath: metadata.namespace
+            - name: POD_NAMESPACE
+              valueFrom:
+                fieldRef:
+                  fieldPath: metadata.namespace
+            - name: SERVICE_NAME
+              value: "springdemo"
+          image: din29/springdemo:latest
+          ports:
+            - containerPort: 8080
+              name: http
+              protocol: TCP
+            - containerPort: 5701
+              name: hazelcast
+              protocol: TCP
+          imagePullPolicy: Always

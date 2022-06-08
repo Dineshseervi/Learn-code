@@ -1,0 +1,19 @@
+
+W
+java:S1191"5Use classes from the Java API instead of Sun classes.(’™ÆÊûÿÿÿÿ8­¸„¸›/
+[
+java:S1854"9Remove this useless assignment to local variable "listB".(®ÿéûûÿÿÿÿ8–¡Š¸›/
+V
+java:S1854"9Remove this useless assignment to local variable "charA".(ºÜ…µ8ŽÞƒ¸›/
+M
+java:S1854"7Remove this useless assignment to local variable "set".(Ÿï„Ù
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ä»”ïúÿÿÿÿ
+V	java:S125"<This block of commented-out lines of code should be removed.(ž‡Ì¤øÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ã¿¢Ôùÿÿÿÿ
+X	java:S125"<This block of commented-out lines of code should be removed.(ˆÞ×ð8™¡Š¸›/
+>
+java:S1481"(Remove this unused "set" local variable.(Ÿï„Ù
+G
+java:S1481"*Remove this unused "charA" local variable.(ºÜ…µ8’Þƒ¸›/
+L
+java:S1481"*Remove this unused "listB" local variable.(®ÿéûûÿÿÿÿ8š¡Š¸›/

@@ -1,0 +1,35 @@
+Custom /Librarian->search for a book
+ renew a book
+ reserve a book
+ return a book
+ check out
+
+
+ Few extra permisson Librarian have :-
+ add a book
+ edit a book
+ delete a book
+
+Book and bookITem:
+bookName
+BookID
+bookType
+authorList
+
+BookUUId_barcode
+rack
+date of publish
+bookFormat
+
+
+
+
+ Server
+ ->send a notification
+
+
+
+
+ ======
+ Find the actors
+ ->member and librarian

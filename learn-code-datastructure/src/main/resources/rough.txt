@@ -1,0 +1,25 @@
+10->23->11->19->9->5->15
+
+mid
+10->23->11-   >19->9->5->15
+10->23-       19->9-
+
+
+--
+how i will return first
+if node length is 1 or null return node.
+
+node a and node b of size 1
+
+--
+get first half node and second half node
+--
+ so end of method will have sorting logic
+ if a <b
+ a.next =sort(a.next,b)
+ reurn a;
+ or
+ b.next=sort(a,b.next)
+ return b;
+
+ nodeA->

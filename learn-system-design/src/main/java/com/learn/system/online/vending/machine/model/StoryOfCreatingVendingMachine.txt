@@ -1,0 +1,6 @@
+Sat Apr 24 13:18:41 IST 2021
+
+I was creating vending machine i had realise  i had not created any runtime exception yet at least create 2-3 runtime exception.
+Have one interface that have all the method have a functionality .
+
+(https://javarevisited.blogspot.com/2016/06/design-vending-machine-in-java.html#axzz6svyRUdDK)

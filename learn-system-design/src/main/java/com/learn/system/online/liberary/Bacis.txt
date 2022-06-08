@@ -1,0 +1,66 @@
+Book
+->
+->id
+->bookuuid
+->name
+->author
+->MetaData-
+    ->pages
+    ->bookType:(ENUM) :Comic,engineering, novel,crime,biography
+    ->
+cost:
+
+======
+BookFormat: HardCover, paperback, audiobook, magazine, Ebook
+BookStatus: Available , loaned, lost
+
+
+BookIssueHistory:
+bookuuid:
+issueDate:
+returntDate:
+readerId:
+
+Books:
+id
+bookCount:
+available:
+issued:
+accquireDate:
+Category
+
+
+Admin
+/books (GET, POST,PUT, DELETE)
+
+/admin/issue
+/admin/return
+
+
+
+readers
+/books/ filter:catergory, bookName,bookType
+/books/available 
+
+-->book not found
+-->BookIssue limit exceeded
+-->
+-->
+
+User Management:
+userId
+userName
+userAddress
+userEmail
+userMobile
+userType
+==================
+Payment
+BookId
+BookUUID
+issueDate
+ReturnDate
+changesToPay
+====
+
+

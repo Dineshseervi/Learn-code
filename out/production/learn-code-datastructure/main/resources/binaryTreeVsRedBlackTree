@@ -1,0 +1,5 @@
+
+Binary search tree is fast in term of search . Avg case (O(log(n)) and worst case is O(n)
+But Red black tree is fast in term of insert and delete.
+-------------------
+Red black tree is self balancing BST.

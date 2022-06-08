@@ -1,0 +1,21 @@
+
+a
+java:S1192"FDefine a constant instead of duplicating this literal "Area:" 4 times.(×³¿åþÿÿÿÿ
+e
+java:S2184E"CCast one of the operands of this subtraction operation to a "long".(âõð¶úÿÿÿÿ8þ‡¨åž/
+`
+java:S2184H"CCast one of the operands of this subtraction operation to a "long".(Êù‰û8þ‡¨åž/
+`
+java:S2184L"CCast one of the operands of this subtraction operation to a "long".(Õ³µ°8ÿ‡¨åž/
+e
+java:S2184O"CCast one of the operands of this subtraction operation to a "long".(ä„õØùÿÿÿÿ8ÿ‡¨åž/
+m
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(ø›ú³ÿÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(×³¿åþÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(×³¿åþÿÿÿÿ
+S	java:S106$"9Replace this use of System.out or System.err by a logger.(×³¿åþÿÿÿÿ
+S	java:S106*"9Replace this use of System.out or System.err by a logger.(×³¿åþÿÿÿÿ
+<
+java:S1659>"Declare "m" on a separate line.(®±Òæ8•ˆ¨åž/
+>
+java:S1659?"!Declare "vmx" on a separate line.(½˜êš8–ˆ¨åž/

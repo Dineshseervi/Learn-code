@@ -1,0 +1,23 @@
+We need to design a online hotel booking system where a user can seach for hotel for given city and book them.
+This should follow JAVA oops  concept and no other resources.
+
+Let think what all we require to male above class.
+
+1 enum
+
+2 class
+
+3 common piece interface
+
+Class's
+1> RoomType (delux,super-delux,)
+2> City (State,Country, cityName,cityId)
+3> Hotels (hotelId,Name , address ,contact ,creationDate,)
+4> Hotel types (LUX,5*,3*,2*)
+5> Facilities (BreakFast, Lunch,Dinner, Gym, swimming-pool, bar )
+6> Booking (hotelName, room,)
+7> Payments
+8> Ratings
+9> Rooms(roomNumber, roomArea, level,roomType ,booked from,booked till)
+
+==============

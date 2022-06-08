@@ -1,0 +1,23 @@
+
+Sorting 2d Array
+
+Approach 1:
+List<ArrayList<Integer>> namesAndNumbers = new ArrayList<ArrayList<Integer>>();
+        namesAndNumbers.add(new ArrayList<Integer>(Arrays.asList(1,2)));
+        namesAndNumbers.add(new ArrayList<Integer>(Arrays.asList(5,6)));
+        namesAndNumbers.add(new ArrayList<Integer>(Arrays.asList(3,4)));
+        Collections.sort(namesAndNumbers, new Comparator<ArrayList<Integer>>() {
+            @Override
+            public int compare(ArrayList<Integer> o1, ArrayList<Integer> o2) {
+                return o1.get(0).compareTo(o2.get(0));
+            }
+        });
+
+Approach 2:
+Collections.sort(namesAndNumbers, (a,b)->a.get(0).compareTo(b.get(0)));
+
+
+
+Question:
+https://www.interviewbit.com/problems/meeting-rooms/
+https://www.interviewbit.com/problems/disjoint-intervals/

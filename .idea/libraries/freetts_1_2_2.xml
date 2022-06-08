@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="freetts-1.2.2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../2021_march/speech/freetts-1.2.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

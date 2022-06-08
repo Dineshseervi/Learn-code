@@ -1,0 +1,8 @@
+
+9
+java:S1128"Remove this duplicated import.(ÆãÑþøÿÿÿÿ
+G
+java:S1128"1Remove this unused import 'java.util.Comparator'.(î¹ó¹
+t
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(÷‘Çªýÿÿÿÿ
+N	java:S106!"9Replace this use of System.out or System.err by a logger.(³°ÖŸ

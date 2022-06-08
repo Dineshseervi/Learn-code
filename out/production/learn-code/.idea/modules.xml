@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/learn-code.iml" filepath="$PROJECT_DIR$/learn-code.iml" />
+      <module fileurl="file://$PROJECT_DIR$/learn-code-daily-online-questions/learn-code-daily-online-questions.iml" filepath="$PROJECT_DIR$/learn-code-daily-online-questions/learn-code-daily-online-questions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/learn-code-datastructure/learn-code-datastructure.iml" filepath="$PROJECT_DIR$/learn-code-datastructure/learn-code-datastructure.iml" />
+      <module fileurl="file://$PROJECT_DIR$/learn-code-design-patter/learn-code-design-patter.iml" filepath="$PROJECT_DIR$/learn-code-design-patter/learn-code-design-patter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/learn-code-io/learn-code-io.iml" filepath="$PROJECT_DIR$/learn-code-io/learn-code-io.iml" />
+      <module fileurl="file://$PROJECT_DIR$/learn-code-javacache/learn-code-javacache.iml" filepath="$PROJECT_DIR$/learn-code-javacache/learn-code-javacache.iml" />
+      <module fileurl="file://$PROJECT_DIR$/learn-system-design/learn-system-design.iml" filepath="$PROJECT_DIR$/learn-system-design/learn-system-design.iml" />
+    </modules>
+  </component>
+</project>

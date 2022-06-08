@@ -1,0 +1,8 @@
+Jump Search
+Bunary Search
+Recursive function to do substring search
+Why is Binary Search preferred over Ternary Search?
+Sublist Search (Search a linked list in another list)
+A Problem in Many Binary Search Implementations
+Leaf nodes from Preorder of a Binary Search Tree
+Binary Search on Singly Linked List

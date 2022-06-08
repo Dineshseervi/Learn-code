@@ -1,0 +1,28 @@
+Level Order Binary Tree Traversal
+->Level order traversal of a tree is breadth first traversal for the tree.
+        Method 1 (Use function to print a given level)
+                -->Time complexity= O(n^2)
+                -->space complexity= O(n)
+        Method 2 (Use queue to store level data and print)
+-----------
+-----------
+Calculate height of Binary Tree using Inorder and Level Order Traversal
+
+Given Inorder traversal and Level Order traversal of a Binary Tree. The task is to calculate the height of the tree without constructing it.
+Input : Input: Two arrays that represent Inorder
+       and level order traversals of a
+       Binary Tree
+       in[]    = {4, 8, 10, 12, 14, 20, 22};
+       level[] = {20, 8, 22, 4, 12, 10, 14};
+Output : 4
+
+        20
+        / \
+        8 22
+       / \
+      4   12
+         /  \
+        10  14
+
+
+

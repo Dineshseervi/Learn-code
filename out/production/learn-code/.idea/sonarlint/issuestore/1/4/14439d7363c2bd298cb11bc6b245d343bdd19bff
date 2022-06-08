@@ -1,0 +1,17 @@
+
+V	java:S125"<This block of commented-out lines of code should be removed.(×³öœüÿÿÿÿ
+S
+java:S1197("8Move the array designator from the variable to the type.(’¢™”şÿÿÿÿ
+S
+java:S1197("8Move the array designator from the variable to the type.(’¢™”şÿÿÿÿ
+S
+java:S1197("8Move the array designator from the variable to the type.(’¢™”şÿÿÿÿ
+m
+java:S3776;"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(ûåï¤ûÿÿÿÿ
+:
+java:S1659="Declare "n" on a separate line.(à™®Ùÿÿÿÿÿ
+U	java:S106E"9Replace this use of System.out or System.err by a logger.(È‘‡ğ8à©Ïå/
+U	java:S106I"9Replace this use of System.out or System.err by a logger.(È‘‡ğ8œÆÏå/
+U	java:S106L"9Replace this use of System.out or System.err by a logger.(È‘‡ğ8êˆĞå/
+U	java:S106P"9Replace this use of System.out or System.err by a logger.(È‘‡ğ8¨ÈÓå/
+Z	java:S106S"9Replace this use of System.out or System.err by a logger.(ŞÒ—üÿÿÿÿ8ıäÕå/

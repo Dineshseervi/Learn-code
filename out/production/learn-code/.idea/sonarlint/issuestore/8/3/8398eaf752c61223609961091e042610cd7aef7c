@@ -1,0 +1,33 @@
+
+n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(àäú
+Z
+java:S2259["DA "NullPointerException" could be thrown; "inNode" is nullable here.(Àïü
+N	java:S1060"9Replace this use of System.out or System.err by a logger.(Õ·‘â
+V	java:S1257"<This block of commented-out lines of code should be removed.(Ôäôûùÿÿÿÿ
+N	java:S106<"9Replace this use of System.out or System.err by a logger.(´ñ«°
+V	java:S125@"<This block of commented-out lines of code should be removed.(û©şÿÿÿÿ
+S	java:S106a"9Replace this use of System.out or System.err by a logger.(Óú¼ıÿÿÿÿ
+m
+java:S3776d"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(¡üòÕúÿÿÿÿ
+V	java:S125i"<This block of commented-out lines of code should be removed.(Õ İÕıÿÿÿÿ
+N	java:S106w"9Replace this use of System.out or System.err by a logger.(äåôá
+S	java:S106y"9Replace this use of System.out or System.err by a logger.(ŞÒ—üÿÿÿÿ
+V	java:S125z"<This block of commented-out lines of code should be removed.(§şÛ¬øÿÿÿÿ
+N	java:S106~"9Replace this use of System.out or System.err by a logger.(¹†¦§
+V	java:S125"<This block of commented-out lines of code should be removed.(şçµÿùÿÿÿÿ
+T	java:S106ˆ"9Replace this use of System.out or System.err by a logger.(ŞÒ—üÿÿÿÿ
+R	java:S125Š"<This block of commented-out lines of code should be removed.(¦ëùŞ
+T
+java:S1197"8Move the array designator from the variable to the type.(º ìıÿÿÿÿ
+W	java:S125‘"<This block of commented-out lines of code should be removed.(¨Âİƒşÿÿÿÿ
+O	java:S106 "9Replace this use of System.out or System.err by a logger.(Ä¹‚Ë
+T	java:S106£"9Replace this use of System.out or System.err by a logger.(ŞÒ—üÿÿÿÿ
+O	java:S106¤"9Replace this use of System.out or System.err by a logger.(Üİ¼µ
+O	java:S106¦"9Replace this use of System.out or System.err by a logger.(áñÁ·
+R	java:S125¥"<This block of commented-out lines of code should be removed.(«³»˜
+O	java:S106¨"9Replace this use of System.out or System.err by a logger.(áñÁ·
+W	java:S125¬"<This block of commented-out lines of code should be removed.(ŒÛ™†ıÿÿÿÿ
+i
+java:S3776²"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(§îÅù
+T	java:S106¿"9Replace this use of System.out or System.err by a logger.(â—ğÖıÿÿÿÿ
+O	java:S106×"9Replace this use of System.out or System.err by a logger.(ÒÙã”
