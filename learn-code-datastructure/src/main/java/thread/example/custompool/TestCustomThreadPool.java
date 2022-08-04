@@ -1,4 +1,4 @@
-package main.java.test;
+package main.java.thread.example.custompool;
 
 public class TestCustomThreadPool {
     public static void main(String[] args) {

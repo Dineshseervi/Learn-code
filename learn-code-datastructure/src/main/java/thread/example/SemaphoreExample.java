@@ -6,7 +6,7 @@ import java.util.concurrent.Semaphore;
 
 public class SemaphoreExample {
 
-    private Semaphore  semaphore=new Semaphore(2,true);
+    private Semaphore  semaphore=new Semaphore(8,true);
 
     private void downloadData() {
 

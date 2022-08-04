@@ -1,4 +1,4 @@
-package main.java.test;
+package main.java.thread.example.custompool;
 
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;

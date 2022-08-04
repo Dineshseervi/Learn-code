@@ -1,0 +1,7 @@
+Content to start with
+https://www.interviewbit.com/multithreading-interview-questions/#explain-thread-pool
+
+//Atomic Integer  and Atomic Boolean
+//Executers
+//Explain context switching
+//What is CyclicBarrier and CountDownLatch?

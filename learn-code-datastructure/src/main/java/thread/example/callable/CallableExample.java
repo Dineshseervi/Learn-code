@@ -14,6 +14,7 @@ public class CallableExample implements Callable<Integer> {
 
     @Override
     public Integer call() throws InterruptedException {
+        System.out.println("call method is called ");
         Thread.sleep(9000);
         return id;
     }

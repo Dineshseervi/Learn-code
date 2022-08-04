@@ -1,1 +1,32 @@
-/out/
+out/
+###
+### Compilation Targets
+###
+target/
+build/
+bin/
+*.class
+_dist
+web.xml
+
+###
+### IntelliJ Local Files
+###
+
+*.iml
+*.ipr
+*.iws
+.idea
+
+###
+### Eclipse Local Files
+###
+.project
+.metadata
+.classpath
+.settings/
+
+###
+### Temporary & Backup Files
+###
+*.swp
